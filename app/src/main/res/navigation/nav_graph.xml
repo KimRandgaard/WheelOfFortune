@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/start_Screen">
+
+    <fragment
+        android:id="@+id/start_Screen"
+        android:name="com.example.wheeloffortune.Start_Screen"
+        android:label="fragment_start__screen"
+        tools:layout="@layout/fragment_start_screen" />
+    <fragment
+        android:id="@+id/game_Fragment"
+        android:name="com.example.wheeloffortune.Game_Fragment"
+        android:label="fragment_game_"
+        tools:layout="@layout/fragment_game_" />
+</navigation>
