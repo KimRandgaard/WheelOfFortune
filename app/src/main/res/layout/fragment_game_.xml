@@ -20,6 +20,80 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.091" />
 
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="59dp"
+        android:layout_height="15dp"
+        android:text="POINTS : "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wordtoguess"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <TextView
+        android:id="@+id/currentPoints"
+        android:layout_width="59dp"
+        android:layout_height="15dp"
+        android:text="1000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/points"
+        app:layout_constraintTop_toBottomOf="@+id/wordtoguess"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <TextView
+        android:id="@+id/life"
+        android:layout_width="59dp"
+        android:layout_height="15dp"
+        android:text="LIFE : "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/points"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <TextView
+        android:id="@+id/currentLife"
+        android:layout_width="59dp"
+        android:layout_height="15dp"
+        android:text="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/life"
+        app:layout_constraintTop_toBottomOf="@+id/wordtoguess"
+        app:layout_constraintVertical_bias="0.073" />
+
+
+    <TextView
+        android:id="@+id/wheelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Points From Wheel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/life"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <TextView
+        android:id="@+id/wheelPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wheelText"
+        app:layout_constraintVertical_bias="0.031" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/usedLetters"
         android:layout_width="wrap_content"

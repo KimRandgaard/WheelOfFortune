@@ -5,8 +5,10 @@
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.27077001013171226" />
         <entry key="app/src/main/res/layout/fragment_game_.xml" value="0.27077001013171226" />
+        <entry key="app/src/main/res/layout/fragment_lose.xml" value="0.43432971014492755" />
         <entry key="app/src/main/res/layout/fragment_start__screen.xml" value="0.27077001013171226" />
         <entry key="app/src/main/res/layout/fragment_start_screen.xml" value="0.27077001013171226" />
+        <entry key="app/src/main/res/layout/fragment_won.xml" value="0.43432971014492755" />
         <entry key="app/src/main/res/layout/recycler_list.xml" value="0.46875" />
       </map>
     </option>

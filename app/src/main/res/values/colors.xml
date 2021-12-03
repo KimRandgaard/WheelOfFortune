@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="wheel_blue">#1410E3</color>
     <color name="letter_blue">#23A4EC</color>
+    <color name="green">#008000</color>
+    <color name="reed">#DC143C</color>
+
 </resources>

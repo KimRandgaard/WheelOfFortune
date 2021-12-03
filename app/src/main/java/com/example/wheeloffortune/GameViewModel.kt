@@ -10,6 +10,13 @@ class GameViewModel : ViewModel() {
     private var input = ""
     val getWords = GameConstants.words
 
+    var points = 0
+    var life = 5
+
+    var updatePoints = 0
+    var guesedLetters = mutableListOf<Char>()
+
+
     private val _words = MutableLiveData<String>()
     val words : LiveData<String> = _words
 
@@ -48,12 +55,45 @@ class GameViewModel : ViewModel() {
         )
 
         val letterCount = wordToGuess?.count{
-            Letter.contains(it)
+            Letter.lowercase().contains(it.lowercase())
         }
 
         if (letterInWord!!){
-            var point = letterCount!!*100
+            points += letterCount!!*updatePoints
+            }else{
+                life -= 1
             }
+    }
+
+    fun spinWheel() {
+        updatePoints = listOf<Int>(0,100,250,500,1000,1500).random()
+    }
+
+    fun sameLetterUsed(Letter: String): Boolean {
+
+        var sameLetter = false
+        if (guesedLetters.contains(Letter.lowercase().single())){
+            sameLetter = true
+        }
+        guesedLetters.add(Letter.lowercase().single())
+        return sameLetter
+    }
+
+    fun gameWon(): Boolean{
+       var allLetters = words.value?.lowercase()?.toList()
+       if(guesedLetters.containsAll(allLetters!!)){
+           return true
+       } else{
+           return false
+       }
+    }
+
+    fun gameLost(): Boolean{
+        if(life <= 0){
+            return true
+        } else{
+            return false
+        }
     }
 
 
