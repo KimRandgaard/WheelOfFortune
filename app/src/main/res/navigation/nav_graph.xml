@@ -14,15 +14,30 @@
         android:id="@+id/game_Fragment"
         android:name="com.example.wheeloffortune.Game_Fragment"
         android:label="fragment_game_"
-        tools:layout="@layout/fragment_game_" />
+        tools:layout="@layout/fragment_game_" >
+        <action
+            android:id="@+id/action_game_Fragment_to_lose"
+            app:destination="@id/lose" />
+        <action
+            android:id="@+id/action_game_Fragment_to_won"
+            app:destination="@id/won" />
+    </fragment>
     <fragment
         android:id="@+id/won"
         android:name="com.example.wheeloffortune.Won"
         android:label="fragment_won"
-        tools:layout="@layout/fragment_won" />
+        tools:layout="@layout/fragment_won" >
+        <action
+            android:id="@+id/action_won_to_start_Screen"
+            app:destination="@id/start_Screen" />
+    </fragment>
     <fragment
         android:id="@+id/lose"
         android:name="com.example.wheeloffortune.Lose"
         android:label="fragment_lose"
-        tools:layout="@layout/fragment_lose" />
+        tools:layout="@layout/fragment_lose" >
+        <action
+            android:id="@+id/action_lose_to_start_Screen"
+            app:destination="@id/start_Screen" />
+    </fragment>
 </navigation>

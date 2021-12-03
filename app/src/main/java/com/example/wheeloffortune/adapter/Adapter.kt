@@ -38,7 +38,7 @@ class Adapter(
      */
     override fun onBindViewHolder(holder: WordViewHolder, position: Int) {
         val item = dataset[position]
-        //holder.textView.text = context.resources.getString(item.stringResourceId)
+        holder.textView.text = item.toString()
     }
 
     /**
